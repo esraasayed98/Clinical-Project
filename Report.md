@@ -26,7 +26,7 @@ Mustafa Tawfik
 # Server Flow
 1) Home page:
 
-![picture](images\screen1.PNG)
+![picture](images\screen1.JPG)
 ----
 2) When we choose **Radiology** :
 
