@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radiology Daily Inspection Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='daily_report.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>Radiology Department Daily inspection </h1>
+				<a href="{{url_for('Radiology')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('makedailyR')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" class="date" placeholder="YYYY-DD-MM" name="date" >
+			<hr><hr><br>
+			<div class="device">
+				<h4>Dental Degital Panorama</h4>
+				<label for="clean">The equipment is clean: </label>
+				<input type="checkbox" class="check" name="DDP1" value="Checked"><br>
+				<label for="damage">No damages or abnormalities on main unit,arm, X-ray tube, and power cable:</label>
+				<input type="checkbox" class="check" name="DDP2" value="Checked"><br>
+				<label for="x_ray">X-ray protection apron is prepared:</label>
+				<input type="checkbox" class="check" name="DDP3" value="Checked"><br>
+				<label for="function">All switches, presetting and dials work normally: </label>
+				<input type="checkbox" class="check" name="DDP4" value="Checked"><br>
+				<label for="power">Power ON and confirm self test pass.</label>
+				<input type="checkbox" class="check" name="DDP5" value="Checked"><br>
+				<label for="ray"> X-ray exposure is available on the desired setting:</label>
+				<input type="checkbox" class="check" name="DDP6" value="Checked"><br>
+				<label for="test">There is no abnormasound, vibration, or smell:</label>
+				<input type="checkbox" class="check" name="DDP7" value="Checked"><br>
+				<label for="parts">equipment and accessories are clean and no damage after any operation:</label>
+				<input type="checkbox" class="check" name="DDP8" value="Checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="DDP9" ><br>
+				<hr><br>
+				<h4>Doppler Ultrasound</h4>
+				<label for="clean">The equipment and detector are clean:</label>
+				<input type="checkbox" class="check" name="DU1" value="Checked"><br>
+				<label for="damage">No damages or abnormalities on main unit,detector, and detector cable:</label>
+				<input type="checkbox" class="check" name="DU2" value="Checked"><br>
+				<label for="accessory">All accessories are hygiene and ready to use:</label>
+				<input type="checkbox" class="check" name="DU3" value="Checked"><br>
+				<label for="function">All switch work normally and there is no abnormality after power on:</label>
+				<input type="checkbox" class="check" name="DU4" value="Checked"><br>
+				<label for="operation"> FHR can be detect:</label>
+				<input type="checkbox" class="check" name="DU5" value="Checked"><br>
+				<label for="parts">equipment and accessories are clean and no damage after any operation:</label>
+				<input type="checkbox" class="check" name="DU6" value="Checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="DU7" ><br>
+				<hr><br>
+				<h4>Automatic X-Ray Film Developer</h4>
+				<label for="clean">The equipment is clean, especially tunings and drain is clean without any leak:</label>
+				<input type="checkbox" class="check" name="XRF1" value="Checked"><br>
+				<label for="wash">Remove each rack and wash by water, especially Dryer rack can be washed anytime: </label>
+				<input type="checkbox" class="check" name="XRF2" value="Checked"><br>
+				<label for="damages">No damages or abnormalities on main unit, each tank and gear for film feeding:</label>
+				<input type="checkbox" class="check" name="XRF3" value="Checked"><br>
+				<label for="function">All switches, maps and dials work normally:</label>
+				<input type="checkbox" class="check" name="XRF4" value="Checked"><br>
+				<label for="power">Power on and verify there is no abnormal sound,vibration,smell or leak of liquid:</label>
+				<input type="checkbox" class="check" name="XRF5" value="Checked"><br>
+				<label for="temp"> Operate and confirm temperature reach to desired setting:</label>
+				<input type="checkbox" class="check" name="XRF6" value="Checked"><br>
+				<label for="operation">No abnormal sound, movement , and vibration when you feed test films:</label>
+				<input type="checkbox" class="check" name="XRF7" value="Checked"><br>
+				<label for="parts">equipment and accessories are clean and no damage after any operation:</label>
+				<input type="checkbox" class="check" name="XRF8" value="Checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="XRF9" ><br>
+				<hr><br>
+				<h4>Bone X-Ray </h4>
+				<label for="clean">The equipment is clean, especially,bucky table,bucky stand, and X-ray tube unit:</label>
+				<input type="checkbox" class="check" name="BXR1" value="Checked"><br>
+				<label for="damage">No damages or abnormalities on all cables and unit</label>
+				<input type="checkbox" class="check" name="BXR2" value="Checked"><br>
+				<label for="movement">Verify movement of X-ray tube holder, bucky table, and bucky stand is smooth:</label>
+				<input type="checkbox" class="check" name="BXR3" value="Checked"><br>
+				<label for="lock">Locking mechanism works well:</label>
+				<input type="checkbox" class="check" name="BXR4" value="Checked"><br>
+				<label for="collimator">Verify smooth movement of collimator on X-ray tube unit:</label>
+				<input type="checkbox" class="check" name="BXR5" value="Checked"><br>
+				<label for="function">All switches, presetting and dials are fixed tightly and work smoothly:</label>
+				<input type="checkbox" class="check" name="BXR6" value="Checked"><br>
+				<label for="power">After power on, all unit energized without any abnormality:</label>
+				<input type="checkbox" class="check" name="BXR7" value="Checked"><br>
+				<label for="value">Verify value for kVA and mA change correctly by dial or switch setting:</label>
+				<input type="checkbox" class="check" name="BXR8" value="Checked"><br>
+				<label for="operation"> X-ray exposure is available on the desired settings:</label>
+				<input type="checkbox" class="check" name="BXR9" value="Checked"><br>
+				<label for="abnormal">No abnormal sound, vibration, or smell</label>
+				<input type="checkbox" class="check" name="BXR10" value="Checked"><br>
+				<label for="parts">equipment and accessories are clean and no damage after any operation:</label>
+				<input type="checkbox" class="check" name="BXR11" value="Checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="BXR12" ><br>
+				<hr><br>
+				<h4>Diagnostic Ultrasound</h4>
+				<label for="clean">The equipment is clean</label>
+				<input type="checkbox" class="check" name="DUS1" value="Checked"><br>
+				<label for="damage"> no damages or abnormalities on main unit, casters, probes, and printer:</label>
+				<input type="checkbox" class="check" name="DUS2" value="Checked"><br>
+				<label for="jell">Ultrasound jell is ready to use:</label>
+				<input type="checkbox" class="check" name="DUS3" value="Checked"><br>
+				<label for="function">All switches, dials, and keyboard work normally:</label>
+				<input type="checkbox" class="check" name="DUS4" value="Checked"><br>
+				<label for="power">Power on and confirm self test pass:</label>
+				<input type="checkbox" class="check" name="DUS5" value="Checked"><br>
+				<label for="operation">Operation of the equipment is normal:</label>
+				<input type="checkbox" class="check" name="DUS6" value="Checked"><br>
+				<label for="parts">equipment and accessories are clean and no damage after any operation:</label>
+				<input type="checkbox" class="check" name="DUS7" value="Checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="DUS8" ><br>
+				<hr><br>
+				<h4>Anesthesia machine</h4>
+				<label for="clean">The equipment is clean</label>
+				<input type="checkbox" class="check" name="AM1" value="Checked"><br>
+				<label for="damage"> no damages or abnormalities on main unit,ventilator, and vaporizer:</label>
+				<input type="checkbox" class="check" name="AM2" value="Checked"><br>
+				<label for="accessory">All accessories (patient circuit ventilator, and vaporizer) are read to us:</label>
+				<input type="checkbox" class="check" name="AM3" value="Checked"><br>
+				<label for="co2">Replacement of CO2 absorbent if its color has changed:</label>
+				<input type="checkbox" class="check" name="AM4" value="Checked"><br>
+				<label for="function">Verify smooth control of flow meters, a dial of vaporizer:</label>
+				<input type="checkbox" class="check" name="AM5" value="Checked"><br>
+				<label for="function">Verify smooth control of a pop-off valve, all switches, and a knob of ventilator:</label>
+				<input type="checkbox" class="check" name="AM6" value="Checked"><br>
+				<label for="abnormal">No abnormal sound, vibration , and gas leak sound when operated with test bag:</label>
+				<input type="checkbox" class="check" name="AM7" value="Checked"><br>
+				<label for="meter">Verify flow-meter when oxygen flows closed, N2O flows is closed simultaneously:</label>
+				<input type="checkbox" class="check" name="AM8" value="Checked"><br>
+				<label for="flow">When oxygen line is disconnected ,alarm sound is activated:</label>
+				<input type="checkbox" class="check" name="AM9" value="Checked"><br>
+				<label for="parts">equipment and accessories are clean and no damage after any operation:</label>
+				<input type="checkbox" class="check" name="AM10" value="Checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="AM11" ><br>
+				<hr><br>
+				<h4>Mammography</h4>
+				<label for="clean">The equipment is clean, free of cracks or loose parts:</label>
+				<input type="checkbox" class="check" name="MMM1" value="Checked"><br>
+				<label for="cables">All hoses and cables are free of breaks, crimps and knots:</label>
+				<input type="checkbox" class="check" name="MMM2" value="Checked"><br>
+				<label for="solution">The cleaning solution for the breast support plate and compressor is available:</label>
+				<input type="checkbox" class="check" name="MMM3" value="Checked"><br>
+				<label for="view">Monitor viewing conditions:</label>
+				<input type="checkbox" class="check" name="MMM4" value="Checked"><br>
+				<label for="parts">equipment and accessories are clean and no damage after any operation:</label>
+				<input type="checkbox" class="check" name="MMM5" value="Checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="MMM6" ><br>
+				<hr><br>
+				<h4>MRI</h4>
+				<label for="clean">The equipment is clean, free of cracks or loose parts:</label>
+				<input type="checkbox" class="check" name="MRI1" value="Checked"><br>
+				<label for="monitor">Monitor system performance</label>
+				<input type="checkbox" class="check" name="MRI2" value="Checked"><br>
+				<label for="image">Presence of Image artifacts:</label>
+				<input type="checkbox" class="check" name="MRI3" value="Checked"><br>
+				<label for="abnormal">No abnormal sound</label>
+				<input type="checkbox" class="check" name="MRI4" value="Checked"><br>
+				<label for="test">Test Resonance</label>
+				<input type="checkbox" class="check" name="MRI5" value="Checked"><br>
+				<label for="contrast">Test Low contrast detectability</label>
+				<input type="checkbox" class="check" name="MRI6" value="Checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="MRI7" ><br>
+				<hr><br>
+				<h4>CT scan</h4>
+				<label for="clean">The equipment is clean, free of cracks or loose parts:</label>
+				<input type="checkbox" class="check" name="CT1" value="Checked"><br>
+				<label for="test">Test the noise and field Uniformity</label>
+				<input type="checkbox" class="check" name="CT2" value="Checked"><br>
+				<label for="image">Test image quality</label>
+				<input type="checkbox" class="check" name="CT3" value="Checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="CT4" ><br>
+				<hr><br>
+				
+			</div>
+			
+			
+
+			<label for="sign">Signature: </label>
+			<input type="text" class="date" name="sig" ><br>
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

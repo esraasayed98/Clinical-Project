@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ventilator Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='PPM.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>Ventilator Report </h1>
+				<a href="{{url_for('OpenHeartDepartment')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('vent')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" placeholder="YYYY-MM-DD" name="date" >
+			<label for="filter">Check inlet filter: </label>
+			<input type="text" name="IF" >
+			<label for="closure">Check outer closure:</label>
+			<input type="text" name="OC" >
+			<label for="hinge">Check door hinge and foam: </label>
+			<input type="text" name="DH" >
+			<label for="latch">Check latch mechanism: </label>
+			<input type="text" name="LM" >
+			<label for="connector">Check connectors on the unit: </label>
+			<input type="text" name="connectors" >
+			<label for="handle">Verify handle is free of detects: </label>
+			<input type="text" name="FD" >
+			<label for="cords">Check power cords: </label>
+			<input type="text" name="PC" >
+			<label for="external">Check External Tubing: </label>
+			<input type="text" name="external" >
+
+			<label for="sign">Signature: </label>
+			<input type="text" name="sig" >
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

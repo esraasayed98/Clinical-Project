@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Physiological monitor system Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='PPM.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>Physiological monitor system Unit </h1>
+				<a href="{{url_for('OpenHeartDepartment')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('monitor')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" placeholder="YYYY-MM-DD" name="date" >
+			<label for="hard">Check the mounting hardware if tight: </label>
+			<input type="text" name="hardware" >
+			<label for="screw">Check all screws:</label>
+			<input type="text" name="screws" >
+			<label for="case">Check Case and cables connectors: </label>
+			<input type="text" name="case" >
+			<label for="frame">Check Frame for the flat panel display: </label>
+			<input type="text" name="panel" >
+			<label for="power">Check power supply:</label>
+			<input type="text" name="power" >
+			<label for="switch">Check ON/OFF power switch: </label>
+			<input type="text" name="pswitch" >
+			<label for="screen">Check touch screen in the event: </label>
+			<input type="text" name="touch" >
+			<label for="test">Apply a functional test for parameters: </label>
+			<input type="text" name="parameters" >
+			<label for="alarm">Check alarm limits:</label>
+			<input type="text" name="alarm" >
+			<label for="network">Check network connection between monitors and tha central station: </label>
+			<input type="text" name="check" >
+
+			<label for="sign">Signature: </label>
+			<input type="text"  name="sig" >
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

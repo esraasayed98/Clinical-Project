@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pump Syringe Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='PPM.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>Pump Syringe Report </h1>
+				<a href="{{url_for('OpenHeartDepartment')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('pump')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" placeholder="YYYY-MM-DD" name="date" >
+			<label for="surface">Check the condition of the external surface: </label>
+			<input type="text" name="CCES" >
+			<label for="power">Check AC power supply and cables:</label>
+			<input type="text" name="ACPC" >
+			<label for="case">Check case , keyboard and plunger: </label>
+			<input type="text" name="CKP" >
+			<label for="test">Check start up self-test operation: </label>
+			<input type="text" name="SUTP" >
+
+			<label for="sign">Signature: </label>
+			<input type="text"  name="sig" >
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

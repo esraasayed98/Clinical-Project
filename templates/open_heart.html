@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+          table, th, td {
+          padding: 10px;
+          border: 1px solid black; 
+          border-collapse: collapse;
+          }
+    </style>
+	<title>Open Heart ICU Department</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='radiology.css')}}">
+</head>
+<body>
+	<div class="table">
+		<div class="head">
+			<h1>Open Heart ICU Department </h1>
+			<a href="http://127.0.0.1:5000"><button class="btn2">Back</button></a>	
+		</div>
+    <table>
+       <tr>
+          {% for r in data.header %}
+          <td>{{ r  }}</td>
+          {% endfor %}
+       </tr>
+       {% for r in data.rec %}
+       <tr>
+          {% for l in r%}
+            <td> {{ l }}</td>
+          {% endfor %}
+       </tr>
+       {% endfor %}
+    </table>
+    <div class="container">
+      <ul>
+        <li><a href="{{url_for('getppmdepartment')}}">View Department's PPM Report</a></li>
+        <li><a href="{{url_for('devicesdetailsOP')}}">View Devices' Details</a></li>  
+      </ul> 
+    </div>
+    
+    <form action="{{url_for('PPMform')}}" method="POST">
+      <label for="one_report">PPM reporting: </label>
+      <input type="text" placeholder="Enter device's serial number" name="serial2">
+      <input class="submit" type="submit" value="Open">
+    </form>
+    <form action="{{url_for('getppmdevice')}}" method="POST">
+      <label for="one_device">View Device's report: </label>
+      <input type="text" placeholder="Enter device's serial number" name="serial1">
+      <input class="submit" type="submit" value="View">
+    </form>
+    
+    
+	</div>
+
+
+</body>
+</html>

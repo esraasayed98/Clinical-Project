@@ -1,0 +1,88 @@
+body{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: white;
+	background-image: url('img2.jpg'); 
+	background-repeat: no-repeat;
+	background-size: 20% 650px;
+	height: 100%;
+	width: 100%;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	
+}
+.report_form{
+	margin-left: 200px;
+
+}
+p{
+	margin-left: 200px;
+	font-size: 100px;
+}
+.head{
+	width: 100%;
+	font-family: cursive;
+	color: white;
+	font-size: 20px;
+	line-height: 70px;
+	display: block;
+	background-color: #336699;
+}
+h1{
+	margin-left: 10px;
+	display: inline;
+}
+.btn1{
+	float: right;
+	font-family: cursive;
+	font-size: 20px;
+	color: white;
+	height: 50px;
+	width: 150px;
+	border-radius: 5px;
+	margin: 10px;
+	background-color: #336699;
+}
+form{
+	margin-left: 200px;
+	font-family: cursive;
+	font-size: 30px;
+}
+label{
+	font-size: 20px;
+}
+.date{
+	display: block;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+	height: 30px;
+	width: 600px;
+	margin-bottom: 20px; 
+}
+.device{
+	width: 900px;
+}
+.device .check{
+	float: right;
+	display: inline;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+	height: 30px;
+	width: 30px;}
+.submit{
+	font-family: cursive;
+	font-size: 20px;
+	color: white;
+	height: 50px;
+	width: 150px;
+	border-radius: 5px;
+	background-color: #336699;
+}
+.submit:hover{
+	background-color: #4080bf;
+}

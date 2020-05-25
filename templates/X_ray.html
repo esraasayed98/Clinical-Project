@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>X_Ray Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='PPM.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>X_ray Report </h1>
+				<a href="{{url_for('OpenHeartDepartment')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('xray')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" placeholder="YYYY-MM-DD" name="date" >
+			<label for="prod">Check X_Ray production: </label>
+			<input type="text" name="XP" >
+			<label for="image">Check image acquisition:</label>
+			<input type="text" name="IA" >
+			<label for="clean">Check interior cleaning: </label>
+			<input type="text" name="IC" >
+			<label for="safe">Check safety interlock: </label>
+			<input type="text" name="SI" >
+			<label for="lamp">Check warning lamp: </label>
+			<input type="text" name="WL" >
+			<label for="sensor">Check sensors: </label>
+			<input type="text" name="CS" >
+			<label for="issu">Check if there is any future issue: </label>
+			<input type="text" name="CI" >
+
+			<label for="sign">Signature: </label>
+			<input type="text"  name="sig" >
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

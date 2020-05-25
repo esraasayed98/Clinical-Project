@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catheter Department</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='radiology.css')}}">
+</head>
+<body>
+	<div class="table">
+		<div class="head">
+			<h1>Catheter Department's devices </h1>
+			<a href="http://127.0.0.1:5000"><button class="btn3">Home</button></a>	
+		</div>
+    <table>
+       <tr>
+          {% for r in data.header %}
+          <td>{{ r  }}</td>
+          {% endfor %}
+       </tr>
+       {% for r in data.rec %}
+       <tr>
+          {% for l in r%}
+            <td> {{ l }}</td>
+          {% endfor %}
+       </tr>
+       {% endfor %}
+    </table>
+    <div class="container">
+      <ul>
+        <li><a href="{{url_for('dailyreportdepartmentC')}}">View Department's Daily inspection Report</a></li>
+        <li><a href="{{url_for('devicesdetailsC')}}">View Devices' Details</a></li><br><br><br>
+        <li><a href="{{url_for('makedailyReport')}}">Daily Inspection reporting</a></li>   
+      </ul> 
+    </div>
+    
+    
+    <form action="{{url_for('dailyreportdevicecatheter')}}" method="POST">
+      <label for="one_device">View Device's report: </label>
+      <input type="text" placeholder="Enter device's serial number" name="serial">
+      <input class="submit" type="submit" value="View">
+    </form>
+
+	</div>
+
+</body>
+</html>

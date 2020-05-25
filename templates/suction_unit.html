@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suction Unit Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='PPM.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>Suction Unit </h1>
+				<a href="{{url_for('OpenHeartDepartment')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('suctionunit')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" placeholder="YYYY/MM/DD" name="date" >
+			<label for="tube">Check suction tubing: </label>
+			<input type="text" name="tubing" >
+			<label for="bottle">Check collection bottle for leaks or cracks:</label>
+			<input type="text" name="collection" >
+			<label for="filter">Check filter: </label>
+			<input type="text" name="filter" >
+			<label for="battery">Check battery: </label>
+			<input type="text" name="battery" >
+
+			<label for="sign">Signature: </label>
+			<input type="text"  name="sig" >
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Defibrillator Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='PPM.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>Defibrillator Report </h1>
+				<a href="{{url_for('OpenHeartDepartment')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('defrillator')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" placeholder="YYYY-MM-DD" name="date" >
+			<label for="AC">Check the shock powered by AC only: </label>
+			<input type="text" name="CSAC" >
+			<label for="battery">Check the shock powered by battery only:</label>
+			<input type="text" name="CSB" >
+			<label for="disarm">Check disarm while pressing disarm key: </label>
+			<input type="text" name="disarm" >
+			<label for="analyzer">Check analyzer readings after delivering 200-J shock: </label>
+			<input type="text" name="AR" >
+			<label for="strip">Check printed strip: </label>
+			<input type="text" name="PS" >
+			<label for="paddles">Repeat the test using paddles: </label>
+			<input type="text" name="RP" >
+
+			<label for="sign">Signature: </label>
+			<input type="text"  name="sig" >
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

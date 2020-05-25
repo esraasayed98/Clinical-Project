@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+          table, th, td {
+          padding: 10px;
+          border: 1px solid black; 
+          border-collapse: collapse;
+          }
+    </style>
+	<title>Devices' Details</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='radiology.css')}}">
+</head>
+<body>
+	<div class="table">
+		<div class="head">
+			<h1>{{data.message}} </h1>
+			<a href="{{url_for('OpenHeartDepartment')}}"><button class="btn1">Back</button></a>	
+		</div>
+    <table>
+       <tr>
+          {% for r in data.header %}
+          <td>{{ r  }}</td>
+          {% endfor %}
+       </tr>
+       {% for r in data.rec %}
+       <tr>
+          {% for l in r%}
+            <td> {{ l }}</td>
+          {% endfor %}
+       </tr>
+       {% endfor %}
+    </table>
+
+</body>
+</html>

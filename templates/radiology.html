@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+          table, th, td {
+          padding: 10px;
+          border: 1px solid black; 
+          border-collapse: collapse;
+          }
+    </style>
+	<title>Radilogy Department</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='radiology.css')}}">
+</head>
+<body>
+	<div class="table">
+		<div class="head">
+			<h1>Radiology Department's devices </h1>
+			<a href="http://127.0.0.1:5000"><button class="btn1">Home</button></a>	
+		</div>
+    <table>
+       <tr>
+          {% for r in data.header %}
+          <td>{{ r  }}</td>
+          {% endfor %}
+       </tr>
+       {% for r in data.rec %}
+       <tr>
+          {% for l in r%}
+            <td> {{ l }}</td>
+          {% endfor %}
+       </tr>
+       {% endfor %}
+    </table>
+    <div class="container">
+      <ul>
+        <li><a href="{{url_for('dailyreportdepartment')}}">View Department's Daily inspection Report</a></li>
+        <li><a href="{{url_for('devicesdetailsR')}}">View Devices' Details</a></li><br><br><br>
+        <li><a href="{{url_for('makedailyR')}}">Daily Inspection reporting</a></li>   
+      </ul> 
+    </div>
+    
+    
+    <form action="{{url_for('dailyreportdevice')}}" method="POST">
+      <label for="one_device">View Device's report: </label>
+      <input type="text" placeholder="Enter device's serial number" name="serial">
+      <input class="submit" type="submit" value="View">
+    </form>
+	</div>
+
+</body>
+</html>

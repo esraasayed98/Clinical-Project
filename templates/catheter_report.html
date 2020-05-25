@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catheter Daily Inspection Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='daily_report.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>Catheter Department Daily inspection </h1>
+				<a href="{{url_for('catheters')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('makedailyReport')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" class="date" placeholder="YYYY-MM-DD" name="date" >
+			<hr><hr><br>
+			<div class="device">
+				<h4>Suction Machine</h4>
+				<label for="clean">The equipment is clean: </label>
+				<input type="checkbox" class="check" name="SM1" value="checked" ><br>
+				<label for="wash">Wash bottle and patient tubing with sterilising solution:</label>
+				<input type="checkbox" class="check" name="SM2" value="checked" ><br>
+				<label for="accessory">Check all fittings and accessories are mounted correctly:</label>
+				<input type="checkbox" class="check" name="SM3" value="checked"><br>
+				<label for="filter">Check filter is clean: </label>
+				<input type="checkbox" class="check" name="SM4" value="checked"><br>
+				<label for="function">Run a brief function check before clinic:</label>
+				<input type="checkbox" class="check" name="SM5" value="checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="SM6" value="checked"><br>
+				<hr><br>
+				<h4>ECG</h4>
+				<label for="clean">The equipment is clean:</label>
+				<input type="checkbox" class="check" name="ECG1" value="checked"><br>
+				<label for="power">Check that battery charge indicator and power indicator are working well:</label>
+				<input type="checkbox" class="check" name="ECG2" value="checked"><br>
+				<label for="cable">Patient cable connector indicator is working well:</label>
+				<input type="checkbox" class="check" name="ECG3" value="checked"><br>
+				<label for="ECG">Check the baseline of the ECG recording is steady:</label>
+				<input type="checkbox" class="check" name="ECG4" value="checked"><br>
+				<label for="check">Check the calibration of machine before use, using 1mV pulse:</label>
+				<input type="checkbox" class="check" name="ECG5" value="checked"><br>
+				<label for="print">Check the printing is clear:</label>
+				<input type="checkbox" class="check" name="ECG6" value="checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="ECG7" value="checked"><br>
+				<hr><br>
+				<h4>Operating Table</h4>
+				<label for="clean">Clean, dry and disinfect all parts:</label>
+				<input type="checkbox" class="check" name="OT1" value="checked"><br>
+				<label for="remove">Remove all paper, tape and foreign matter: </label>
+				<input type="checkbox" class="check" name="OT2" value="checked"><br>
+				<label for="parts">Check all parts are present and tightly fitted:</label>
+				<input type="checkbox" class="check" name="OT3" value="checked"><br>
+				<label for="mattress">Replace mattress if worn or damaged:</label>
+				<input type="checkbox" class="check" name="OT4" value="checked"><br>
+				<label for="oil">Check no oil is leaking from hydraulics:</label>
+				<input type="checkbox" class="check" name="OT5" value="checked"><br>
+				<label for="movement">Check essential movements before use:</label>
+				<input type="checkbox" class="check" name="OT6" value="checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="OT7" ><br>
+				<hr><br>
+				<h4>Cardiology Ultrasound System </h4>
+				<label for="clean">The equipment is clean:</label>
+				<input type="checkbox" class="check" name="CUS1" value="checked"><br>
+				<label for="remove">Remove any tape, paper or foreign body from equipment:</label>
+				<input type="checkbox" class="check" name="CUS2" value="checked"><br>
+				<label for="parts">Check all parts are present and connected:</label>
+				<input type="checkbox" class="check" name="CUS3" value="checked"><br>
+				<label for="cables">Check cables are not twisted and remove from service if any damage is visible:</label>
+				<input type="checkbox" class="check" name="CUS4" value="checked"><br>
+				<label for="function">Switch on power and check all indicators function:</label>
+				<input type="checkbox" class="check" name="CUS5" value="checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="CUS6" ><br>
+				<hr><br>
+				<h4>Monitor</h4>
+				<label for="clean">The equipment is clean, especially all connectors, surface, and display of equipment</label>
+				<input type="checkbox" class="check" name="MO1" value="checked"><br>
+				<label for="damage">No damages or abnormalities on main unit, switches, connections:</label>
+				<input type="checkbox" class="check" name="MO2" value="checked"><br>
+				<label for="damage">No damages in Patient cable, Disposable electrode, NIBP set, SpO2 probe, and Power cable :</label>
+				<input type="checkbox" class="check" name="MO3" value="checked"><br>
+				<label for="accessory">All parts (Patient cable, Disposable electrode, NIBP set, and SpO2 probe) are ready to use:</label>
+				<input type="checkbox" class="check" name="MO4" value="checked"><br>
+				<label for="power">Power on and verify equipment pass self test:</label>
+				<input type="checkbox" class="check" name="MO5" value="checked"><br>
+				<label for="operation">Operation of the equipment is normal:</label>
+				<input type="checkbox" class="check" name="MO6" value="checked"><br>
+				<label for="abnormal">No abnormal sound or vibration when operated:</label>
+				<input type="checkbox" class="check" name="MO7" value="checked"><br>
+				<label for="display">ECG wave, heart rate, SpO2 etc. are displayed normally:</label>
+				<input type="checkbox" class="check" name="MO8" value="checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="MO9" ><br>
+				<hr><br>
+				<h4>Anesthesia machine</h4>
+				<label for="clean">The equipment is clean and any water or waste matter is removed:</label>
+				<input type="checkbox" class="check" name="AM1" value="checked"><br>
+				<label for="damage">No damages or abnormalities on main unit,ventilator, and vaporizer:</label>
+				<input type="checkbox" class="check" name="AM2" value="checked"><br>
+				<label for="leak">Check with soapy solution if any leak is audible:</label>
+				<input type="checkbox" class="check" name="AM3" value="checked"><br>
+				<label for="co2">Replacement of CO2 absorbent if its color has changed:</label>
+				<input type="checkbox" class="check" name="AM4" value="checked"><br>
+				<label for="function">Verify smooth control of flow meters, a dial of vaporizer:</label>
+				<input type="checkbox" class="check" name="AM5" value="checked"><br>
+				<label for="function">Verify smooth control of a pop-off valve, all switches, and a knob of ventilator:</label>
+				<input type="checkbox" class="check" name="AM6" value="checked"><br>
+				<label for="parts">Check all seals, connectors, adapters and parts are tight:</label>
+				<input type="checkbox" class="check" name="AM7" value="checked"><br>
+				<label for="meter">Verify flow-meter when oxygen flows closed, N2O flows is closed simultaneously:</label>
+				<input type="checkbox" class="check" name="AM8" value="checked"><br>
+				<label for="flow">When oxygen line is disconnected ,alarm sound is activated:</label>
+				<input type="checkbox" class="check" name="AM9" value="checked"><br>
+				<label for="check">Check that after use, system is depressurized and all caps / covers are replaced:</label>
+				<input type="checkbox" class="check" name="AM10" value="checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="AM11" ><br>
+				<hr><br>
+				<h4>Surgical light</h4>
+				<label for="clean">The equipment is clean and free of dust:</label>
+				<input type="checkbox" class="check" name="SL1" value="checked"><br>
+				<label for="accessory">Check all fittings and accessories are mounted correctly:</label>
+				<input type="checkbox" class="check" name="SL2" value="checked"><br>
+				<label for="check">Check there are no cracks in glass / covers or liquid spillages:</label>
+				<input type="checkbox" class="check" name="SL3" value="checked"><br>
+				<label for="function">Run a brief function check before clinic:</label>
+				<input type="checkbox" class="check" name="SL4" value="checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="SL5" ><br>
+				<hr><br>
+				<h4>Diathermy</h4>
+				<label for="clean">The equipment is clean, especially, all connectors:</label>
+				<input type="checkbox" class="check" name="DT1" value="checked"><br>
+				<label for="damage">No damages or abnormalities on main unit, control devices, and power cables:</label>
+				<input type="checkbox" class="check" name="DT2" value="checked"><br>
+				<label for="accessory">All accessories (patient electrode, hand piece, tip, and foot switch) are ready to use:</label>
+				<input type="checkbox" class="check" name="DT3" value="checked"><br>
+				<label for="function">All switches, dials, and screws are fixed tightly</label>
+				<input type="checkbox" class="check" name="DT4" value="checked"><br>
+				<label for="piece">Connection of hand piece is not loosen:</label>
+				<input type="checkbox" class="check" name="DT5" value="checked"><br>
+				<label for="abnormal">No abnormal sound or vibration when operated on all modes:</label>
+				<input type="checkbox" class="check" name="DT6" value="checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="DT7" ><br>
+				<hr><br>
+				<h4>Ultrasound</h4>
+				<label for="clean">The equipment is clean, free of cracks or loose parts:</label>
+				<input type="checkbox" class="check" name="UT1" value="checked"><br>
+				<label for="damage">No damages or abnormalities on main unit, casters, probes and printer:</label>
+				<input type="checkbox" class="check" name="UT2" value="checked"><br>
+				<label for="jell">Ultrasound jell is ready to use:</label>
+				<input type="checkbox" class="check" name="UT3" value="checked"><br>
+				<label for="switch">All switches, dials and keyboard aork normally:</label>
+				<input type="checkbox" class="check" name="UT4" value="checked"><br>
+				<label for="power">Power on and confirm self test pass:</label>
+				<input type="checkbox" class="check" name="UT5" value="checked"><br>
+				<label for="operated">Operation of the equipment is normal:</label>
+				<input type="checkbox" class="check" name="UT6" value="checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="UT7" ><br>
+				<hr><br>
+				<h4>Difibrillator</h4>
+				<label for="clean">The equipment is clean, free of dust, forign substances or cracks:</label>
+				<input type="checkbox" class="check" name="DF1" value="checked"><br>
+				<label for="damage">No damages or abnormalities on main unit and cables:</label>
+				<input type="checkbox" class="check" name="DF2" value="checked"><br>
+				<label for="power">Check power sources, AC and battery:</label>
+				<input type="checkbox" class="check" name="DF3" value="checked"><br>
+				<label for="battery">Recycle damaged or leaking battery:</label>
+				<input type="checkbox" class="check" name="DF4" value="checked"><br>
+				<label for="ECG">No damages or cracks in ECG cables as they're used by date:</label>
+				<input type="checkbox" class="check" name="DF5" value="checked"><br>
+				<label for="check">Replace electrodes if date's passed:</label>
+				<input type="checkbox" class="check" name="DF6" value="checked"><br>
+				<label for="test">Press on, and observe illumination of self-test message and LEDs, write your observation:</label>
+				<input type="checkbox" class="check" name="DF7" value="checked"><br>
+				<label for="date"> Comment:</label>
+				<input type="text" class="date" placeholder="Write your Comment....." name="DF8" ><br>
+				<hr><br>
+				
+			</div>
+			
+			
+
+			<label for="sign">Signature: </label>
+			<input type="text" class="date" name="sig" ><br>
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

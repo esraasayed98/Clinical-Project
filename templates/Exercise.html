@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise,Cardiac Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='PPM.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>Exercise,Cardiac Report  </h1>
+				<a href="{{url_for('OpenHeartDepartment')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('exercise')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" placeholder="YYYY-MM-DD" name="date" >
+			<label for="cable">Check Power and network cables: </label>
+			<input type="text" name="CPN" >
+			<label for="cords">Check all cords and connectors:</label>
+			<input type="text" name="CCC" >
+			<label for="tools">Check if there is any missing screws, cracks or broken areas: </label>
+			<input type="text" name="CM" >
+			<label for="clean">Check the printers condition and clean it: </label>
+			<input type="text" name="PCC" >
+			<label for="test">Test the printer after cleaning: </label>
+			<input type="text" name="TP" >
+
+			<label for="sign">Signature: </label>
+			<input type="text"  name="sig" >
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

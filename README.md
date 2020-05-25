@@ -1,3 +1,0 @@
-# Clinical-Project
-
-### Team18

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ECG Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='PPM.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>ECG Report </h1>
+				<a href="{{url_for('OpenHeartDepartment')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('ecg')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" placeholder="YYYY-MM-DD" name="date" >
+			<label for="switch">Check the power switch adn turn it on to the MAC12: </label>
+			<input type="text" name="CP" >
+			<label for="LCD">Check LCD main menue sfter the short self-test:</label>
+			<input type="text" name="CLCD" >
+			<label for="room">Check ECG room for examination: </label>
+			<input type="text" name="CR" >
+			<label for="supply">Verify the all adequate supplies are stocked: </label>
+			<input type="text" name="AS" >
+
+			<label for="sign">Signature: </label>
+			<input type="text"  name="sig" >
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

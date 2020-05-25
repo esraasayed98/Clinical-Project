@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ECG_Ultrasound Report </title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='PPM.css')}}">
+</head>
+<body>
+	<div class="report_form">
+		<div class="head">
+				<h1>ECG_Ultrasound Report </h1>
+				<a href="{{url_for('OpenHeartDepartment')}}"><button class="btn1">Back</button></a>	
+		</div>
+
+		<form action="{{url_for('ecg_ult')}}" method="POST">
+			<label for="date"> Date:</label>
+			<input type="text" placeholder="YYYY-MM-DD" name="date" >
+			<label for="visual">Visual inspection: </label>
+			<input type="text" name="VS" >
+			<label for="system">System diagnostic:</label>
+			<input type="text" name="SD" >
+			<label for="clean">System cleaning: </label>
+			<input type="text" name="SC" >
+			<label for="disassembly">System disassembly: </label>
+			<input type="text" name="Sda" >
+			<label for="reassembly">System reassembly: </label>
+			<input type="text" name="SR" >
+			<label for="image">Daignostic imaging: </label>
+			<input type="text" name="DI" >
+			<label for="criteria">Fall / Pass criteria: </label>
+			<input type="text" name="FPC" >
+			<label for="test">Leakage Testing: </label>
+			<input type="text" name="LT" >
+
+			<label for="sign">Signature: </label>
+			<input type="text" name="sig" >
+
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
