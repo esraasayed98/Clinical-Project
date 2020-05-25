@@ -25,10 +25,13 @@ Mustafa Tawfik
 ---------------
 # Server Flow
 1) Home page:
-![picture](images\screen1.png)
+
+![picture](images\screen1.PNG)
 ----
 2) When we choose **Radiology** :
-![picture](images\screen2.png)
+
+![picture](images\screen2.PNG)
+
 the department's page appear with:
 
     1. The department's devices with their serial numbers
@@ -36,17 +39,25 @@ the department's page appear with:
     2. Three buttons|:
 
         1. When we click on **View Devices' Details** , department's devices' details are reviewed
-![picture](images\screen3.png)
+		
+![picture](images\screen3.PNG)
 
         2. When we click on **Daily Inspection reporting**, we can add a new daily inspection report for all department's devices
-   ![picture](images\screen4.png)
+   
+   ![picture](images\screen4.PNG)
+   
    first, you need to insert date of the day
    then, check each point for each device and write your comment
-   ![picture](images\screen5.png)
+   
+   ![picture](images\screen5.PNG)
+   
    after finishing inspection report for all devices, you need to add a signature and click submit to save the results at the data base
         3. When we click on **View Department's Daily inspection Report**, a review report for all devices in the department appears
-   ![picture](images\screen6.png)
-   ![picture](images\screen7.png)
+   
+   ![picture](images\screen6.PNG)
+   
+   ![picture](images\screen7.PNG)
+   
    ![picture](images\screen8.png)
    ![picture](images\screen9.png)
    ![picture](images\screen10.png)
