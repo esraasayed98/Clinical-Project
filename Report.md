@@ -26,11 +26,11 @@ Mustafa Tawfik
 # Server Flow
 1) Home page:
 
-![picture](images\screen1.JPG)
+![picture](images\screen1.png)
 ----
 2) When we choose **Radiology** :
 
-![picture](images\screen2.PNG)
+![picture](images\screen2.png)
 
 the department's page appear with:
 
@@ -40,27 +40,30 @@ the department's page appear with:
 
         1. When we click on **View Devices' Details** , department's devices' details are reviewed
 		
-![picture](images\screen3.PNG)
+![picture](images\screen3.png)
 
         2. When we click on **Daily Inspection reporting**, we can add a new daily inspection report for all department's devices
    
-   ![picture](images\screen4.PNG)
+   ![picture](images\screen4.png)
    
    first, you need to insert date of the day
    then, check each point for each device and write your comment
    
-   ![picture](images\screen5.PNG)
+   ![picture](images\screen5.png)
    
    after finishing inspection report for all devices, you need to add a signature and click submit to save the results at the data base
         3. When we click on **View Department's Daily inspection Report**, a review report for all devices in the department appears
    
-   ![picture](images\screen6.PNG)
+   ![picture](images\screen6.png)
    
-   ![picture](images\screen7.PNG)
+   ![picture](images\screen7.png)
    
    ![picture](images\screen8.png)
+   
    ![picture](images\screen9.png)
+   
    ![picture](images\screen10.png)
+   
    while , if you need a report for one device only, you need to enter its serial number in the input box, 
    ![picture](images\screen11.png)
    for an example, if you need to get the report for **Mammography** device , you have to enter its serial number 
