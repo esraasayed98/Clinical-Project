@@ -82,10 +82,7 @@ the department's page appear with:
 ![picture](images/screen10.PNG)
 
 while , if you need a report for one device only, you need to enter its serial number in the input box, 
-![picture](images/screen11.PNG)
-
-
-
+![picture](images\screen11.PNG)
 for an example, if you need to get the report for **Mammography** device , you have to enter its serial number 
 ![picture](images\screen13.PNG)
 
