@@ -205,4 +205,7 @@ after finishing inspection report for all devices, you need to add a signature a
   We needed to install:
 
   - Flask via "pip install flask"
+
   - "pip install anaconda mysql-connector-python"
+
+    
