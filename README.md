@@ -87,7 +87,7 @@ for an example, if you need to get the report for **Mammography** device , you h
 
 
 
-![picture](images\screen13.PNG)
+![picture](images\screen11.PNG)
 
 to get its report
 ![picture](images/screen12.PNG)
