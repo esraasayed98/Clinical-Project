@@ -187,7 +187,7 @@ after finishing inspection report for all devices, you need to add a signature a
       ![picture](images/cath3.PNG)
          ![picture](images/cath4.PNG)
          ![picture](images/cath5.PNG)
-         ![picture](C:/Users/GEHAD/Desktop/Clinical-Project/Clinical-Project/images/cath6.PNG)
+         ![picture](images/cath6.PNG)
          ![picture](images/cath7.PNG)
            while , if you need a report for one device only, you need to enter its serial number in the input box, 
          ![picture](images/screen11.PNG)
