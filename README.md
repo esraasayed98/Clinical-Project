@@ -1,5 +1,6 @@
 # Clinical Final Project
-----------
+
+
 ## Team: 18
 ## Submitted By:  
 Alzahraa Eid Abd El-Fattah
@@ -13,7 +14,7 @@ Esraa Sayed Mustafa
 Mustafa Tawfik
 
 -------------
-------------
+
 
 
 
@@ -89,7 +90,6 @@ the department's page appear with:
 
 
 
-------------------
 
 3) When we choose **Open Heart**:
 ![picture](images\open1.PNG)
@@ -128,9 +128,9 @@ after filling the report , you need to click submit to save the results at the d
    ![picture](images\report4.PNG)
    ![picture](images\report5.PNG)
 
-------------------------------
 
-2) When we choose **Catheter** :
+
+4) When we choose **Catheter** :
 ![picture](images\catheter.PNG)
 the department's page appear with:
 
