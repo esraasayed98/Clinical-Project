@@ -4,10 +4,10 @@
 
 
 
-![image](C:/Users/GEHAD/Desktop/Clinical-Project/Clinical-Project/images/screen1.PNG)
+![image](images/screen1.PNG)
 
 
 
 2) When we choose **Radiology** :
 
-![picture](C:/Users/GEHAD/Desktop/Clinical-Project/Clinical-Project/images/screen2.PNG)
+![picture](images/screen2.PNG)
