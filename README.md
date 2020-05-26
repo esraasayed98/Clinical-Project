@@ -86,7 +86,11 @@ while , if you need a report for one device only, you need to enter its serial n
 
 for an example, if you need to get the report for **Mammography** device , you have to enter its serial number.
 
+
+
 ![picture](images\screen13.PNG)
+
+
 
 to get its report
 ![picture](images/screen12.PNG)
