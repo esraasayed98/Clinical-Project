@@ -184,17 +184,17 @@ after finishing inspection report for all devices, you need to add a signature a
 
       
 
-2.         3. ![picture](images/cath3.PNG)
-                 ![picture](images/cath4.PNG)
-                 ![picture](images/cath5.PNG)
-                 ![picture](C:/Users/GEHAD/Desktop/Clinical-Project/Clinical-Project/images/cath6.PNG)
-                 ![picture](images/cath7.PNG)
-                   while , if you need a report for one device only, you need to enter its serial number in the input box, 
-                 ![picture](images/screen11.PNG)
-                 for an example, if you need to get the report for **Suction Machine** device , you have to enter its serial number 
-                 ![picture](images/cath8.PNG)
-                 to get its report
-                 ![picture](images/cath9.PNG)
+      ![picture](images/cath3.PNG)
+         ![picture](images/cath4.PNG)
+         ![picture](images/cath5.PNG)
+         ![picture](C:/Users/GEHAD/Desktop/Clinical-Project/Clinical-Project/images/cath6.PNG)
+         ![picture](images/cath7.PNG)
+           while , if you need a report for one device only, you need to enter its serial number in the input box, 
+         ![picture](images/screen11.PNG)
+         for an example, if you need to get the report for **Suction Machine** device , you have to enter its serial number 
+         ![picture](images/cath8.PNG)
+         to get its report
+         ![picture](images/cath9.PNG)
 
 
 #### Comments:
