@@ -170,9 +170,9 @@ the department's page appear with:
 
    
 
-2.When we click on **Daily Inspection reporting**, we can add a new daily inspection report for all department's devices
+2. When we click on **Daily Inspection reporting**, we can add a new daily inspection report for all department's devices
 
-![picture](images\cath1.PNG)first, you need to insert date of the day
+   ![picture](images/cath1.png)first, you need to insert date of the day
 then, check each point for each device and write your comment
 ![picture](images/cath2.PNG)
 after finishing inspection report for all devices, you need to add a signature and click submit to save the results at the data base
