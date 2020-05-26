@@ -120,9 +120,9 @@ the department's page appear with:
 2. The input box for PPM reporting, for applying report for each device by entering its serial number
    ![picture](images/open3.PNG)
 
+   
 
-
-1. for an example, if we need to apply report for **Exercise Cardiac Report** 
+   for an example, if we need to apply report for **Exercise Cardiac Report** 
    ![picture](images/reportPPM.PNG)
    after filling the report , you need to click submit to save the results at the data base.
 
@@ -150,13 +150,11 @@ the department's page appear with:
 
       2. When we click on **View Department's PPM Report**, we can add a new daily inspection report for all department's devices
 
-
-
-2. ![picture](images/report1.PNG)
-   ![picture](images/report2.PNG)
-   ![picture](images/report3.PNG)
-   ![picture](images/report4.PNG)
-   ![picture](images/report5.PNG)
+![picture](images/report1.PNG)
+![picture](images/report2.PNG)
+![picture](images/report3.PNG)
+![picture](images/report4.PNG)
+![picture](images/report5.PNG)
 
 
 
