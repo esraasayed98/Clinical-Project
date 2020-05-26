@@ -87,7 +87,7 @@ while , if you need a report for one device only, you need to enter its serial n
 
 
 for an example, if you need to get the report for **Mammography** device , you have to enter its serial number 
-![picture](C:/Users/GEHAD/Desktop/Clinical-Project/Clinical-Project/images\screen13.PNG)
+![picture](images\screen13.PNG)
 
 
 
@@ -134,14 +134,39 @@ the department's page appear with:
 
    for an example , if we search for Exercise ECG device's report
 
-   3. ![picture](images/open6.PNG)
+   ![picture](images/open6.PNG)
+
+   
 
    
 
    4. Two buttons:
+
+      
 
       1. When we click on **View Devices' Details** , department's devices' details are reviewed
 
       ![picture](images/open2.PNG)
 
       2. When we click on **View Department's PPM Report**, we can add a new daily inspection report for all department's devices
+
+
+
+2. ![picture](images/report1.PNG)
+   ![picture](images/report2.PNG)
+   ![picture](images/report3.PNG)
+   ![picture](images/report4.PNG)
+   ![picture](images/report5.PNG)
+
+
+
+4) When we choose **Catheter** :
+![picture](images/catheter.PNG)
+the department's page appear with:
+
+1. The department's devices with their serial numbers
+
+2. Three buttons:
+
+   1. When we click on **View Devices' Details** , department's devices' details are reviewed
+
