@@ -87,7 +87,7 @@ while , if you need a report for one device only, you need to enter its serial n
 
 
 for an example, if you need to get the report for **Mammography** device , you have to enter its serial number 
-![picture](images\screen13.PNG)
+![picture](C:/Users/GEHAD/Desktop/Clinical-Project/Clinical-Project/images\screen13.PNG)
 
 
 
@@ -109,3 +109,39 @@ for an example, if FCR serial number is entered, this page appears:
 
 
 3) When we choose **Open Heart**:
+
+
+
+![picture](images/open1.PNG)
+the department's page appear with:
+
+1. The department's devices with their serial numbers
+
+2. The input box for PPM reporting, for applying report for each device by entering its serial number
+   ![picture](images/open3.PNG)
+
+
+
+1. for an example, if we need to apply report for **Exercise Cardiac Report** 
+   ![picture](images/reportPPM.PNG)
+   after filling the report , you need to click submit to save the results at the data base.
+
+
+
+3. The input box for reviewing each device's PPM report by entering its serial number
+
+   ![picture](images/open4.PNG)
+
+   for an example , if we search for Exercise ECG device's report
+
+   3. ![picture](images/open6.PNG)
+
+   
+
+   4. Two buttons:
+
+      1. When we click on **View Devices' Details** , department's devices' details are reviewed
+
+      ![picture](images/open2.PNG)
+
+      2. When we click on **View Department's PPM Report**, we can add a new daily inspection report for all department's devices
