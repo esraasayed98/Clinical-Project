@@ -85,6 +85,8 @@ while , if you need a report for one device only, you need to enter its serial n
 ![picture](images/screen11.PNG)
 for an example, if you need to get the report for **Mammography** device , you have to enter its serial number 
 
+
+
 ![picture](images\screen13.PNG)
 
 to get its report
@@ -98,7 +100,7 @@ for an example, if FCR serial number is entered, this page appears:
 
 
 
-3. ![picture](/images/error.PNG)
+![picture](/images/error.PNG)
 
 
 
