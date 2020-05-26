@@ -34,7 +34,7 @@ Mustafa Tawfik
 
 
 
-![image](C:/Users/GEHAD/Desktop/Clinical-Project/Clinical-Project/Clinical-Project/images/screen1.PNG)
+![image](images/screen1.PNG)
 
 
 
