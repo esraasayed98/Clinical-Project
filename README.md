@@ -170,14 +170,14 @@ the department's page appear with:
 
    ![picture](images/catheter1.PNG)
 
-   2. When we click on **Daily Inspection reporting**, we can add a new daily inspection report for all department's devices
+   
 
-      ![picture](images\cath1.PNG)
-      first, you need to insert date of the day
-      then, check each point for each device and write your comment
+When we click on **Daily Inspection reporting**, we can add a new daily inspection report for all department's devices
 
-      ![picture](images\cath2.PNG)
-
+![picture](images/cath1.PNG)
+first, you need to insert date of the day
+then, check each point for each device and write your comment
+![picture](images/cath2.PNG)
 after finishing inspection report for all devices, you need to add a signature and click submit to save the results at the data base
 
    3. When we click on **View Department's Daily inspection Report**, a review report for all devices in the department appears
