@@ -172,6 +172,8 @@ the department's page appear with:
 
 When we click on **Daily Inspection reporting**, we can add a new daily inspection report for all department's devices
 
+
+
 ![picture](images/cath1.PNG)
 first, you need to insert date of the day
 then, check each point for each device and write your comment
